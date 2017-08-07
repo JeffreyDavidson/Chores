@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('chores/{id}', 'ChoresController@show')->name('chores.index');
+Route::get('chores', 'ChoresController@index')->name('chores.index');
